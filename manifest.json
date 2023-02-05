@@ -1,0 +1,15 @@
+{
+    "manifest_version":3,
+    "version":"1.0",
+    "name":"yourThumbCostumizer",
+    "content_scripts":[{
+        "matches":["*://*.youtube.com/*"],
+        "js":["main.js"]
+    }],
+    "description":"Blur annoying thumbnails on youtube!",
+    "web_accessible_resources": [{
+        "resources":["images/logo.png"],
+        "matches": ["<all_urls>"]
+    }],
+    "permissions": ["storage"]
+  }
